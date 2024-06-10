@@ -63,10 +63,19 @@ body {
 }
 
 #banner-carousel-top img:hover,
-#banner-carousel-bottom img:hover {
-    transition: transform 0.1s ease;
+#banner-carousel-bottom img:hover,
+.hoverable-img:hover {
+    transition: transform 0.25s ease;
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+}
+
+#banner-carousel-top img:not(:hover),
+#banner-carousel-bottom img:not(:hover),
+.hoverable-img:not(:hover) {
+    transition: transform 0.25s ease;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 #banner-carousel-top,
@@ -114,23 +123,25 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10vh;
 }
 
-#info-1 {
+.info {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    gap: 40px;
+    justify-content: space-evenly;
+    gap: 60px;
 }
 
-#info-1-img {
-    width: 700px;
+.info-img {
+    width: 600px;
+    height: 400px;
     border-radius: 25px;
 }
 
-#info-1-text-menu {
-    width: 480px;
+.info-text-menu {
+    width: 520px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,8 +149,50 @@ body {
     gap: 20px;
 }
 
-.info-1-text {
+.info-text {
     text-align: center;
     color: white;
     font-size: 28px;
+}
+
+#main-bottom {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 80px;
+}
+
+#offer-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#home-button {
+    margin-top: 20px;
+    background-color: #a194d4;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+}
+
+#home-button:hover {
+    background-color: #816cd4;
+    transition: transform 0.25s ease;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#home-button:not(:hover) {
+    background-color: #a194d4;
+    transition: transform 0.25s ease;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }

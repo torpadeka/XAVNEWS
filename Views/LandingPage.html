@@ -14,17 +14,26 @@
             rel="stylesheet"
         />
         <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
         <link rel="stylesheet" href="../Styles/FontStyle.css" />
         <link rel="stylesheet" href="../Styles/GlobalStyle.css" />
         <link rel="stylesheet" href="../Styles/LandingPageStyle.css" />
+        <script src="../Scripts/GlobalScript.js" defer></script>
+        <script src="../Scripts/LandingPageScript.js" defer></script>
         <title>Home Page</title>
     </head>
     <body>
         <header>
             <span id="nav-logo" class="lilita-one-regular">X A V N E W S</span>
+            <span id="nav-trademark" class="montserrat-alternates-regular"
+                >®</span
+            >
             <div id="nav-search">
                 <span id="nav-search-icon" class="material-symbols-outlined">
                     search
@@ -49,7 +58,12 @@
                 >
                     settings
                 </span>
-                <span class="material-symbols-outlined nav-icon"> person </span>
+                <span
+                    id="profile-icon"
+                    class="material-symbols-outlined nav-icon"
+                >
+                    account_circle
+                </span>
             </div>
         </header>
         <main>
@@ -153,7 +167,7 @@
                         id="banner-text-content"
                         class="montserrat-alternates-regular"
                     >
-                        A brand-new way to read news
+                        A better way to read news
                     </span>
                 </div>
 
@@ -290,25 +304,169 @@
                 </div>
             </div>
             <div id="main-mid">
-                <div id="info-1">
+                <div id="info-1" class="info">
                     <img
                         id="info-1-img"
-                        src="../Assets/LandingPage/info-img-1.jpg"
+                        class="info-img hoverable-img"
+                        src="../Assets/LandingPage/info-img-1.png"
                         alt=""
+                        style="object-fit: contain"
                     />
-                    <div id="info-1-text-menu">
-                        <div class="montserrat-alternates-regular info-1-text">
-                            Tired of ancient-looking news sites that are just a
-                            pain to use?
+                    <div id="info-1-text-menu" class="info-text-menu">
+                        <div class="lilita-one-regular info-text">
+                            A NEW LOOK FOR READING NEWS
                         </div>
-                        <div class="montserrat-alternates-regular info-1-text">
-                            Looking for a news source that is objective and
-                            unbiased?
+                        <div class="montserrat-alternates-light info-text">
+                            We offer a modernized and fresh-designed platform
+                            prioritizing our users' experience and needs, while
+                            providing new and intuitive features
+                        </div>
+                    </div>
+                </div>
+                <div id="info-2" class="info">
+                    <div id="info-2-text-menu" class="info-text-menu">
+                        <div class="lilita-one-regular info-text">
+                            A CREDIBLE AND TRUSTED SOURCE
+                        </div>
+                        <div class="montserrat-alternates-light info-text">
+                            Information and data used in our news content are
+                            highly scrutinized and verified, removing bias and
+                            misinformation
+                        </div>
+                    </div>
+                    <img
+                        id="info-2-img"
+                        class="info-img hoverable-img"
+                        src="../Assets/LandingPage/info-img-2.jpg"
+                        alt=""
+                        style="object-fit: cover"
+                    />
+                </div>
+                <div id="info-3" class="info">
+                    <img
+                        id="info-3-img"
+                        class="info-img hoverable-img"
+                        src="../Assets/LandingPage/info-img-3.jpg"
+                        alt=""
+                        style="object-fit: contain"
+                    />
+                    <div id="info-3-text-menu" class="info-text-menu">
+                        <div class="lilita-one-regular info-text">
+                            GET THE FRESHEST NEWS AT LIGHTSPEED
+                        </div>
+                        <div class="montserrat-alternates-light info-text">
+                            Well, not at light speed but we bring you the
+                            hottest news all-day round, as fast as possible!
                         </div>
                     </div>
                 </div>
             </div>
+            <div id="main-bottom">
+                <div id="offer-title" class="lilita-one-regular info-text">
+                    <span>TRY</span>
+                    <span style="font-size: 50px">X A V N E W S</span>
+                    <span>NOW</span>
+                </div>
+                <div
+                    id="offer-text"
+                    class="montserrat-alternates-regular info-text"
+                >
+                    And see for yourself!
+                </div>
+                <button id="home-button" class="montserrat-alternates-regular">
+                    Go to Home Page
+                </button>
+            </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div id="footer-socials">
+                <div
+                    id="footer-socials-text"
+                    class="montserrat-alternates-bold footer-text"
+                >
+                    FOLLOW
+                </div>
+                <div id="footer-socials-icons">
+                    <img
+                        class="footer-icon"
+                        src="../Assets/Global/instagram-icon.png"
+                        alt=""
+                    />
+                    <img
+                        class="footer-icon"
+                        src="../Assets/Global/twitter_icon.png"
+                        alt=""
+                    />
+                    <img
+                        class="footer-icon"
+                        src="../Assets/Global/youtube_icon.png"
+                        alt=""
+                    />
+                    <img
+                        class="footer-icon"
+                        src="../Assets/Global/linkedln-icon.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <div id="footer-location">
+                <div
+                    id="footer-location-text"
+                    class="montserrat-alternates-bold footer-text"
+                >
+                    JAKARTA
+                </div>
+                <div id="footer-location-details">
+                    <span
+                        id="footer-location-email"
+                        class="footer-text montserrat-alternates-light"
+                        style="cursor: pointer"
+                        ><u>contact-xav@xavnews.com</u></span
+                    >
+                    <span
+                        id="footer-location-numbers"
+                        class="footer-text montserrat-alternates-light"
+                        >+62 8000 0001 0909</span
+                    >
+                    <span
+                        id="footer-location-address"
+                        class="footer-text montserrat-alternates-light"
+                        >Kpg. Otista No. 139, 3rd Floor, Alam Sutera</span
+                    >
+                    <span
+                        id="footer-location-map-link"
+                        class="footer-text montserrat-alternates-bold"
+                        style="cursor: pointer"
+                        ><u>see on map >></u></span
+                    >
+                </div>
+            </div>
+            <div class="footer-link-menu montserrat-alternates-light">
+                <span>PRICING</span>
+                <span>ABOUT US</span>
+                <span>OUR TEAM</span>
+            </div>
+            <div class="footer-link-menu montserrat-alternates-light">
+                <span>PRIVACY POLICY</span>
+                <span>TERMS & CONDITIONS</span>
+                <span>TERMS OF USE</span>
+            </div>
+            <div id="footer-logo-menu">
+                <span id="footer-logo" class="lilita-one-regular"
+                    >X A V N E W S</span
+                >
+                <span
+                    id="footer-logo-trademark"
+                    class="montserrat-alternates-regular"
+                    >®</span
+                >
+                <span
+                    id="footer-logo-text"
+                    class="montserrat-alternates-regular"
+                >
+                    Read News the Better Way
+                </span>
+            </div>
+        </footer>
     </body>
 </html>
