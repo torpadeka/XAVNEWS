@@ -86,16 +86,51 @@ const articleAdmonitions = [
 
 const articleInfoDiv = document.getElementById("article-info");
 const articleContentDiv = document.getElementById("article-content");
+const articleCommentDiv = document.getElementById("article-comment");
+const commentButton = document.getElementById("comment-button");
+const commentError = document.getElementById("comment-error");
 const backButton = document.getElementById("back-button");
 
 backButton.addEventListener("click", function () {
     location.href = "../Views/HomePage.html";
 });
 
+commentButton.addEventListener("click", function () {
+    let commentText = document.getElementById("comment-input").value;
+
+    if (commentText === "") {
+        commentError.innerHTML = `
+            <span id="comment-error-message"
+                >The comment can't be empty!</span
+            >`;
+    } else {
+        commentError.innerHTML = "";
+        document.getElementById("comment-input").value = "";
+
+        articleCommentDiv.insertAdjacentHTML(
+            "beforeend",
+            `<div class="comment-item">
+            <div class="commenter">
+                <img
+                    src="../Assets/Global/profile-image.jpg"
+                    class="comment-writer-pfp comment-profile-image"
+                />
+                <div class="comment-writer-name montserrat-light">
+                    Firefly
+                </div>
+            </div>
+            <div class="comment montserrat-light">
+                ${commentText}
+            </div>
+        </div>`
+        );
+    }
+});
+
 function getArticleID() {
     var query = window.location.search.substring(1);
     var pair = query.split("=");
-    if (pair[0] == "id") {
+    if (pair[0] === "id") {
         return pair[1];
     }
 

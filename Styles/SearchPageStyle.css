@@ -5,51 +5,31 @@ main {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    min-height: 600px;
+    max-height: 3000px;
 }
 
-#your-categories {
+#search-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
     width: 85%;
+    min-height: 600px;
+    max-height: 3000px;
 }
 
-#daily-news {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 85%;
-}
-
-#your-categories-title {
+#search-menu-title {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding-bottom: 10px;
 }
 
-#daily-news-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-left: 5%;
-}
-
-#your-categories-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-#daily-news-menu {
+#search-menu-results {
     display: flex;
     flex-direction: row;
     align-items: center;
