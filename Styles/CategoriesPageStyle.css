@@ -1,0 +1,126 @@
+.title {
+    color: white;
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 1000px;
+}
+
+#categories-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+}
+
+#category-menu {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    padding-bottom: 40px;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+    background-color: #4f447b;
+    padding: 10px 38px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.category-item-selected {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+    background-color: #816cd4;
+    padding: 10px 38px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.category-item:hover {
+    background-color: #816cd4;
+    transition: transform 0.25s ease;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.category-item:not(:hover) {
+    background-color: #4f447b;
+    transition: transform 0.25s ease;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.category-item-selected:hover {
+    transition: transform 0.25s ease;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.category-item-selected:not(:hover) {
+    transition: transform 0.25s ease;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.category-name {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.selected-category {
+    background-color: #816cd4;
+}
+
+#info-text {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#home-button {
+    margin-top: 20px;
+    background-color: #4f447b;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#home-button:hover {
+    background-color: #816cd4;
+    transition: transform 0.25s ease;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#home-button:not(:hover) {
+    background-color: #4f447b;
+    transition: transform 0.25s ease;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

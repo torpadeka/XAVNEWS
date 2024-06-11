@@ -175,12 +175,13 @@ body {
 
 #home-button {
     margin-top: 20px;
-    background-color: #a194d4;
+    background-color: #4f447b;
     color: white;
     font-size: 25px;
     padding: 10px 20px;
     border-radius: 30px;
     border: none;
+    cursor: pointer;
 }
 
 #home-button:hover {
@@ -191,7 +192,7 @@ body {
 }
 
 #home-button:not(:hover) {
-    background-color: #a194d4;
+    background-color: #4f447b;
     transition: transform 0.25s ease;
     -webkit-transform: scale(1);
     transform: scale(1);
