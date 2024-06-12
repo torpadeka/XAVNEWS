@@ -16,7 +16,7 @@ const articleWriters = [
     "Richardson Williams",
     "Bidoriya Ibuku",
     "Dremskiy Frendo",
-    "Ayato",
+    "Cool Hacker",
     "FuriNa Chan",
     "Joko Satoru",
     "Ronald Drump",
