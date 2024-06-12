@@ -68,6 +68,10 @@ input {
     padding: 0 15px;
 }
 
+input::placeholder {
+    color: white;
+}
+
 .input-menu {
     color: white;
     display: flex;

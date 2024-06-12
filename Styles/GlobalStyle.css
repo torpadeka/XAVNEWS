@@ -119,14 +119,16 @@ main {
     padding-left: 10px;
 }
 
-#profile-image:hover {
+#profile-image:hover,
+#staff-image:hover {
     cursor: pointer;
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     transition: transform 0.2s ease;
 }
 
-#profile-image:not(:hover) {
+#profile-image:not(:hover),
+#staff-image:not(:hover) {
     cursor: pointer;
     -webkit-transform: scale(1);
     transform: scale(1);
