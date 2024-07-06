@@ -84,6 +84,17 @@ const articleAdmonitions = [
     "YouTube's declaration of war on adblockers reignites a contentious battle, sparking debates on user freedom, platform monetization, and the future of online advertising.",
 ];
 
+const articleTimestamps = [
+    "Monday, 2 January 2024 - 12:43 PM",
+    "Tuesday, 18 March 2024 - 10:03 AM",
+    "Wednesday, 25 February 2024 - 15:32 PM",
+    "Thursday, 8 December 2023 - 16:10 PM",
+    "Friday, 6 March 2024 - 08:49 AM",
+    "Saturday, 19 January 2024 - 09:23 AM",
+    "Sunday, 27 December 2023 - 14:21 PM",
+    "Monday, 22 November 2023 - 20:27 PM",
+]
+
 const articleInfoDiv = document.getElementById("article-info");
 const articleContentDiv = document.getElementById("article-content");
 const articleCommentDiv = document.getElementById("article-comment");
@@ -191,6 +202,7 @@ articleInfoDiv.innerHTML += `
                 Math.floor(Math.random() * 100000) + 1 + 100000
             }</span>
         </div>
+        <div class="timestamp value montserrat-light">${articleTimestamps[id - 1]}</div>
         <div id="article-actions">
             <span
                 class="material-symbols-outlined details-icon-image article-action-icon"
@@ -211,11 +223,6 @@ articleInfoDiv.innerHTML += `
                 class="material-symbols-outlined details-icon-image article-action-icon"
             >
                 quick_reference_all
-            </span>
-            <span
-                class="material-symbols-outlined details-icon-image article-action-icon"
-            >
-                more_horiz
             </span>
         </div>
     </div>

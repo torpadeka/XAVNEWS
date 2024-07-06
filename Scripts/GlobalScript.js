@@ -3,6 +3,7 @@
 const logo = document.getElementById("nav-logo");
 const searchInput = document.getElementById("nav-search-bar");
 const filterButton = document.getElementById("filter-icon");
+const settingsButton = document.getElementById("settings-icon");
 
 logo.addEventListener("click", function () {
     location.href = "../Views/LandingPage.html";
@@ -20,6 +21,12 @@ if (searchInput != null) {
 if (filterButton != null) {
     filterButton.addEventListener("click", function () {
         location.href = "../Views/CategoriesPage.html";
+    });
+}
+
+if(settingsButton != null){
+    settingsButton.addEventListener("click", function () {
+        location.href = "../Views/SettingsPage.html";
     });
 }
 
